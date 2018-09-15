@@ -25,12 +25,12 @@ Shaperを経由して、整形された文をgoogle翻訳のフォームに打�
 
 - [ ] Shaparの入力フォームに任意の文字列をぶちこむ
 - [ ] Shaperの出力を読み取る
-- [ ] google翻訳のURLを生成する
+- [x] google翻訳のURLを生成する
     - https://translate.google.co.jp/?hl=ja#en/ja/Recent%20years%20have%20witnessed%20a%20growing%20interest%20in%20the%20use%20for%20sparse%20representations%20for%20signals.
     - こんなふうにURLを作れば、訳が出てくる。
 - [ ] google翻訳のページそのものを表示してしまってもなかなか便利では？（単語の定義とかも見られるし）
 - [ ] GUIを制作
 
 ### 余裕があったら追加したい機能
-- [ ] 1文で改行
+- [x] 1文で改行
 
