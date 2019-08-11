@@ -2,11 +2,12 @@ import re
 
 
 def text_to_url(text):
-    ret = re.sub(r"-\n", "", text)
-    ret = re.sub(r"- ", "", text)
+    ret = re.sub(r"\-\n", "", text)
+    ret = re.sub(r"\-\r\n", "", ret)
+    ret = re.sub(r"-", "", ret)
     ret = re.sub(r"\n", "%20", ret)
     ret = re.sub("\. ", ".%0A%0A", ret)
-    ret = re.sub(" ", "%20", ret)
+    ret = re.sub("\s+", "%20", ret)
 
     return "https://translate.google.co.jp/?hl=ja#en/ja/"+ret
 
