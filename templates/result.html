@@ -1,0 +1,16 @@
+<form method="post">
+  <textarea name="text" id="text" cols="100" rows="20">{{ request.form['text'] }}</textarea>
+  </br>
+  <input type="submit" value="translate" style="WIDTH: 400px; HEIGHT: 40px">
+</form>
+
+<h1><a href={{url}} target="_blank">結果を新しいタブで開く</a></h1>
+
+</br>
+</br>
+<h3>reshaped text</h3>
+{% for t in text %}
+{{t}}
+</br>
+</br>
+{%endfor%} 
