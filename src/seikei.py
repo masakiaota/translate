@@ -2,7 +2,7 @@ import re
 
 
 def reshape_text(text):
-    ret = re.sub(r"\-\n", "", text)
+    ret = re.sub(r"\-\s+", "", text)
     ret = re.sub(r"\-\r\n", "", ret)
     ret = re.sub(r"\r\n", " ", ret)
     #ret = re.sub(r"-", "", ret)
