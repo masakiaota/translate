@@ -1,5 +1,7 @@
 Shaper to google translate
 ---
+### what is this?
+WIP
 
 ### how to install
 1. clone repository
@@ -16,8 +18,8 @@ python3 run.py # at `translate/`
 
 if you are docker user, following command will be available.
 ```
-docker build -t ShaperToGoogleTranslate . # make docker image at `translate/`
-docker run -p 5000:5000 --rm -it ShaperToGoogleTranslate # run at any directory
+docker build -t shaper_to_gt . # make docker image at `translate/`
+docker run -p 5000:5000 --rm -it shaper_to_gt # run at any directory
 ```
 `docker run` command is available at any directory. So I recommend you to make docker image.
 
@@ -27,6 +29,9 @@ Enter address.
 ```
 http://0.0.0.0:5000/
 ```
+
+### how to use
+WIP
 
 ### 参考
 論文をGoogle翻訳にかける時に便利なWebApp「Shaper」を公開しました
