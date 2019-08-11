@@ -10,8 +10,10 @@ RUN pip install --upgrade pip &&\
 RUN apk update &&\
     apk add bash fish vim tmux git tree
 
+ADD . /
 
-ENTRYPOINT ["/usr/bin/fish"]
+# ENTRYPOINT ["/usr/bin/fish"]
+ENTRYPOINT ["python","run.py"]
 
 
 
